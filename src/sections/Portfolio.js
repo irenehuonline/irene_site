@@ -3,6 +3,7 @@ import React from "react";
 export function PortfolioSection({ portfolioOpen, handlePortfolioClick }) {
   return (
     <section>
+      <hr className="h-0.5 my-4 bg-gray-500 border-0 dark:bg-gray-100" />
       <h2 className="sr-only" id="portfolio-heading">
         Portfolio
       </h2>
@@ -26,7 +27,9 @@ export function PortfolioSection({ portfolioOpen, handlePortfolioClick }) {
         aria-hidden={!portfolioOpen}
       >
         <p className="text-xl p-4 m-4">
-          <span className="font-bold">filler text</span>
+          i guess this is filler text because i havent really done this section
+          yet.
+          <span className="font-bold"> but idk girl who knows </span>
         </p>
       </div>
     </section>

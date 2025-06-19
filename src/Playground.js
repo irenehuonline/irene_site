@@ -40,18 +40,16 @@ export function Playground(props) {
           <span className="font-bold"> yay!</span>
         </p>
       </section>
-      <hr className="h-0.5 my-4 bg-gray-200 border-0 dark:bg-gray-100" />
       <PortfolioSection
         portfolioOpen={portfolioOpen}
         handlePortfolioClick={() => setPortfolioOpen((open) => !open)}
       />
-      <hr className="h-0.5 my-4 bg-gray-200 border-0 dark:bg-gray-100" />
       <ContactSection
         contactOpen={contactOpen}
         handleContactHover={handleContactHover}
         handleContactClick={handleContactClick}
       />
-      <hr className="h-0.5 my-4 bg-gray-200 border-0 dark:bg-gray-100" />
+      <hr className="h-0.5 my-4 bg-gray-500 border-0 dark:bg-gray-100" />
     </main>
   );
 }

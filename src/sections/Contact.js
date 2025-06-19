@@ -7,6 +7,7 @@ export function ContactSection({
 }) {
   return (
     <section>
+      <hr className="h-0.5 my-4 bg-gray-500 border-0 dark:bg-gray-100" />
       <h2 className="sr-only" id="contact-heading">
         Contact
       </h2>
@@ -30,7 +31,7 @@ export function ContactSection({
         }`}
         aria-hidden={!contactOpen}
       >
-        <p className="text-xl p-4 m-4 outline-5 rounded-2xl outline outline-gray-800">
+        <p className="text-xl p-4 m-4 outline-5 rounded-2xl outline outline-gray-500">
           if you'd like to get in touch, feel free to reach out via email at{" "}
           <span className="font-bold">irenehuonline@gmail.com</span>, or fill
           out the form below ^^
