@@ -1,11 +1,27 @@
 import React, { useState } from "react";
+import { ContactSection } from "./sections/Contact";
+import { PortfolioSection } from "./sections/Portfolio";
+
 export function Playground(props) {
   const [contactOpen, setContactOpen] = useState(false);
+  const [contactEverHovered, setContactEverHovered] = useState(false);
+  const [portfolioOpen, setPortfolioOpen] = useState(true);
+
+  const handleContactHover = () => {
+    if (!contactEverHovered) {
+      setContactEverHovered(true);
+      setContactOpen(true);
+    }
+  };
+
+  const handleContactClick = () => {
+    setContactOpen((open) => !open);
+  };
 
   return (
-    <main className="flex flex-col h-screenm-8 p-8">
+    <main className="flex flex-col min-h-screen m-8 p-8">
       <header>
-        <h1 className="text-8xl font-bold leading-tight pb-1 p-2 hover:blur-sm transition duration-1000">
+        <h1 className="text-8xl font-bold leading-tight pb-8 p-2 hover:blur-sm transition duration-1000">
           Irene Hu
           <span className="font-normal"> (b. 2002)</span>
         </h1>
@@ -25,42 +41,16 @@ export function Playground(props) {
         </p>
       </section>
       <hr className="h-0.5 my-4 bg-gray-200 border-0 dark:bg-gray-100" />
-      <div>
-        <section>
-          <h2 className="text-4xl hover:blur-sm transition duration-200 p-2">
-            + WORK
-          </h2>
-          {/* future: dropdown with project/portfolio list */}
-        </section>
-        <hr className="h-0.5 my-4 bg-gray-200 border-0 dark:bg-gray-100" />
-        <section>
-          <button
-            className="w-full text-left text-4xl hover:blur-sm transition duration-200 p-2 focus:outline-none"
-            aria-expanded={contactOpen}
-            aria-controls="contact-content"
-            onClick={() => setContactOpen((open) => !open)}
-            type="button"
-          >
-            + CONTACT ME
-          </button>
-          <div
-            id="contact-content"
-            className={`mt-2 transition-all duration-100 ease-in-out overflow-hidden ${
-              contactOpen
-                ? "opacity-100 translate-y-0 max-h-40"
-                : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"
-            }`}
-            aria-hidden={!contactOpen}
-          >
-            <p className="text-xl p-4 m-4 outline-5 rounded-2xl outline outline-gray-800">
-              if you'd like to get in touch, feel free to reach out via email at{" "}
-              <span className="font-bold">irenehuonline@gmail.com</span>, or
-              fill out the form below ^^
-            </p>
-            {/* TODO: MAKE A SUBMISSION FORM FOR MESSAGES */}
-          </div>
-        </section>
-      </div>
+      <PortfolioSection
+        portfolioOpen={portfolioOpen}
+        handlePortfolioClick={() => setPortfolioOpen((open) => !open)}
+      />
+      <hr className="h-0.5 my-4 bg-gray-200 border-0 dark:bg-gray-100" />
+      <ContactSection
+        contactOpen={contactOpen}
+        handleContactHover={handleContactHover}
+        handleContactClick={handleContactClick}
+      />
       <hr className="h-0.5 my-4 bg-gray-200 border-0 dark:bg-gray-100" />
     </main>
   );
