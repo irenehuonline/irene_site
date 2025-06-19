@@ -1,0 +1,57 @@
+/* Normal (TeX Gyre Heros) */
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('../fonts/texgyreheros-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('../fonts/texgyreheros-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('../fonts/texgyreheros-italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TeXGyreHeros';
+    src: url('../fonts/texgyreheros-bolditalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Condensed (TeX Gyre Heros CN) */
+@font-face {
+    font-family: 'TeXGyreHerosCN';
+    src: url('../fonts/texgyreheroscn-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHerosCN';
+    src: url('../fonts/texgyreheroscn-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHerosCN';
+    src: url('../fonts/texgyreheroscn-italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TeXGyreHerosCN';
+    src: url('../fonts/texgyreheroscn-bolditalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
