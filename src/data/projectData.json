@@ -1,0 +1,67 @@
+[
+    {
+        "index": 0,
+        "title": "hits the griddy in Cal Anderson Park",
+        "description": "i hit the griddy at cal anderson bro",
+        "tools": ["JavaScript", "React", "Node.js"],
+        "image": "https://www.bergerpartnership.com/wp-content/uploads/2016/05/Project-page-feature-image-Cal-Anderson.jpg",
+        "link": "https://example.com/project-a"
+    },
+    {
+        "index": 1,
+        "title": "single songle",
+        "description": "i sang a single songle.",
+        "tools": ["Python", "Django"],
+        "image": "https://placehold.co/600x400",
+        "link": "https://example.com/project-b"
+    },
+    {
+        "index": 2,
+        "title": "goes to soy street",
+        "description": "irene goes to soy street",
+        "tools": ["JavaScript", "React", "Node.js"],
+        "image": "https://pbs.twimg.com/media/GnLkvdFWUAAT-Pf?format=jpg&name=large",
+        "link": "https://example.com/project-a"
+    },    
+    {
+        "index": 3,
+        "title": "tenga ",
+        "description": "tenga and tights night with irene",
+        "tools": ["JavaScript", "React", "Node.js"],
+        "image": "https://pbs.twimg.com/media/GgQAx6fWwAArX7Q?format=jpg&name=large",
+        "link": "https://example.com/project-a"
+    },    
+    {
+        "index": 4,
+        "title": "title",
+        "description": "mercari purchase 1000000 yen",
+        "tools": ["JavaScript", "React", "Node.js"],
+        "image": "https://u-mercari-images.mercdn.net/photos/m97075846771_1.jpg?width=1280&quality=75&_=1743366735",
+        "link": "https://example.com/project-a"
+    },    
+    {
+        "index": 5,
+        "title": "erm. . . im a pengin!",
+        "description": "they said im a pengin",
+        "tools": ["JavaScript", "React", "Node.js"],
+        "image": "https://u-mercari-images.mercdn.net/photos/m63457254163_1.jpg?width=1280&quality=75&_=1750138464",
+        "link": "https://example.com/project-a"
+    },    
+    {
+        "index": 6,
+        "title": "she bad tho",
+        "description": "ohhh shit she bad tho",
+        "tools": ["JavaScript", "React", "Node.js"],
+        "image": "https://u-mercari-images.mercdn.net/photos/m19527018553_1.jpg?width=1280&quality=75&_=1748783879",
+        "link": "https://example.com/project-a"
+    },    
+    {
+        "index": 7,
+        "title": "😭😭😭😭",
+        "description": "😢😢😢😢😢😢😭😭😭😭😭😭",
+        "tools": ["JavaScript", "React", "Node.js"],
+        "image": "https://u-mercari-images.mercdn.net/photos/m99353486921_1.jpg?width=1280&quality=75&_=1738127308",
+        "link": "https://example.com/project-a"
+    }
+    
+]

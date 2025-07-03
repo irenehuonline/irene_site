@@ -1,4 +1,6 @@
 import React from "react";
+import { PortfolioCard } from "../components/PortfolioCard";
+import projectData from "../data/projectData.json";
 
 export function PortfolioSection({ portfolioOpen, handlePortfolioClick }) {
   return (
@@ -8,29 +10,44 @@ export function PortfolioSection({ portfolioOpen, handlePortfolioClick }) {
         Portfolio
       </h2>
       <button
-        className="w-full text-left text-4xl hover:blur-sm transition duration-200 p-2 focus:outline-none"
+        className={`w-full text-left p-2 focus:outline-none
+    ${portfolioOpen ? "text-6xl" : "text-4xl"}`}
         aria-expanded={portfolioOpen}
         aria-controls="portfolio-content"
         onClick={handlePortfolioClick}
         type="button"
         aria-labelledby="portfolio-heading"
       >
-        + PORTFOLIO
+        <h2 className="hover:blur-sm transition-all duration-300 w-fit">
+          + portfolio
+        </h2>
       </button>
       <div
         id="portfolio-content"
         className={`mt-2 transition-all duration-150 ease-in-out overflow-hidden ${
           portfolioOpen
-            ? "opacity-100 translate-y-0 max-h-40"
+            ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-2 max-h-0 pointer-events-none"
         }`}
         aria-hidden={!portfolioOpen}
       >
         <p className="text-xl p-4 m-4">
-          i guess this is filler text because i havent really done this section
-          yet.
-          <span className="font-bold"> but idk girl who knows </span>
+          this is filler text{" "}
+          <span className="font-bold hover:backdrop-invert transition duration-1000">
+            because 💔 i havent done 💔💔💔💔 this section yet.💔💔
+          </span>
         </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4 mx-4">
+          {projectData.map((project, index) => (
+            <PortfolioCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

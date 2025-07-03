@@ -20,7 +20,9 @@ export function ContactSection({
         type="button"
         aria-labelledby="contact-heading"
       >
-        + CONTACT ME
+        <h2 className="hover:blur-sm transition-all duration-300 w-fit">
+          + connect with me!
+        </h2>
       </button>
       <div
         id="contact-content"
@@ -31,10 +33,10 @@ export function ContactSection({
         }`}
         aria-hidden={!contactOpen}
       >
-        <p className="text-xl p-4 m-4 outline-5 rounded-2xl outline outline-gray-500">
+        <p className="text-xl p-4 m-8 rounded-2xl border-4 backdrop-blur-lg border-gray-200">
           if you'd like to get in touch, feel free to reach out via email at{" "}
-          <span className="font-bold">irenehuonline@gmail.com</span>, or fill
-          out the form below ^^
+          <span className="font-bold">irenehuonline@gmail.com </span>
+          <span className="line-through">or fill out the form below ^^ </span>
         </p>
         {/* TODO: MAKE A SUBMISSION FORM FOR MESSAGES */}
       </div>
