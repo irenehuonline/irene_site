@@ -6,8 +6,13 @@ export function IntroTextSection() {
   return (
     <section className="px-2 pt-2 pb-8 selection:bg-blue-700 selection:text-teal-100">
       <p className="text-2xl px-16 pb-2 leading-none">
-        i dabble in <span className="font-bold">programming and design.</span> i
-        like bunnies{" "}
+        i am a recent{" "}
+        <span className="font-bold selection:bg-indigo-900 selection:text-white">
+          UW iSchool
+        </span>{" "}
+        graduate who dabbles in{" "}
+        <span className="font-bold">web dev, data programming, and design</span>
+        {". "}i like bunnies{" "}
         <img
           src={bunny1}
           alt="a cute bunny"

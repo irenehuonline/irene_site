@@ -19,7 +19,7 @@ export function PortfolioSection({ portfolioOpen, handlePortfolioClick }) {
         aria-labelledby="portfolio-heading"
       >
         <h2 className="hover:blur-sm transition-all duration-300 w-fit">
-          + portfolio
+          + featured projects
         </h2>
       </button>
       <div
@@ -32,10 +32,13 @@ export function PortfolioSection({ portfolioOpen, handlePortfolioClick }) {
         aria-hidden={!portfolioOpen}
       >
         <p className="text-xl p-4 m-4">
-          this is filler text{" "}
+          this is a placeholder line of text because{" "}
           <span className="font-bold hover:backdrop-invert transition duration-1000">
-            because 💔 i havent done 💔💔💔💔 this section yet.💔💔
+            💔 i havent completed this section yet.💔{" "}
           </span>
+        </p>
+        <p className="text-xl px-4 mx-4">
+          but for now, this acts as an okay summary:
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4 mx-4">

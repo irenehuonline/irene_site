@@ -24,7 +24,7 @@ export function Playground(props) {
   return (
     <main className="flex flex-col min-h-screen m-8 p-8  selection:bg-blue-700 selection:text-teal-100">
       <header>
-        <h1 className=" w-full selection:bg-red-700 selection:text-blue-700 tracking-widest text-8xl font-bold leading-tight pb-8 p-2 hover:blur-sm transition duration-1000">
+        <h1 className=" w-full tracking-widest text-8xl font-bold leading-tight pb-8 p-2 hover:blur-sm transition duration-1000">
           Irene Hu
           <span className="font-normal"> (b. 2002)</span>{" "}
           <span className="font-normal text-white"> ★ ★ ★ ★ ★</span>
@@ -54,6 +54,7 @@ export function Playground(props) {
           built with <span className="font-bold tracking-tight">react</span> and{" "}
           <span className="font-bold tracking-tight">tailwind.css</span>
         </p>
+        <p className="text-lg tracking-widest">© 2025 Irene Hu </p>
       </footer>
     </main>
   );
